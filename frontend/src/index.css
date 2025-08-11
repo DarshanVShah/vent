@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+  }
+}
+
+@layer components {
+  .vent-card {
+    @apply bg-white rounded-xl shadow-lg p-6 border border-gray-100;
+  }
+  
+  .vent-button {
+    @apply px-6 py-3 rounded-lg font-medium transition-all duration-200 transform hover:scale-105 active:scale-95;
+  }
+  
+  .vent-button-primary {
+    @apply vent-button bg-vent-blue text-white hover:bg-blue-600 shadow-md;
+  }
+  
+  .vent-button-secondary {
+    @apply vent-button bg-gray-100 text-gray-700 hover:bg-gray-200;
+  }
+  
+  .vent-button-danger {
+    @apply vent-button bg-vent-red text-white hover:bg-red-600 shadow-md;
+  }
+  
+  .vent-input {
+    @apply w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-vent-blue focus:border-transparent transition-all duration-200;
+  }
+  
+  .vent-textarea {
+    @apply vent-input resize-none min-h-[120px] font-medium text-gray-800;
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .glass-effect {
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+}
