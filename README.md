@@ -1,6 +1,6 @@
-# Vent - Anonymous Venting Platform
+# Vent 
 
-A platform for individuals to anonymously vent — get some anger out, one vent a day.
+A platform for individuals to anonymously vent.
 
 ## Core Concept
 
